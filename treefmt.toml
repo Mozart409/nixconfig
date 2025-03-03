@@ -1,0 +1,11 @@
+excludes = ["*.md", "*.gif", ".git/"]
+
+
+[formatter.nixfmt-rfc-style]
+command = "nixfmt"
+includes = ["*.nix"]
+
+
+[formatter.shfmt]
+command = "shfmt"
+includes = ["*.sh"]
