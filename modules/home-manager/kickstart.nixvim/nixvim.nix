@@ -132,7 +132,7 @@
         };
       };
       kanagawa = {
-        enable = false;
+        enable = true;
         autoLoad = false;
       };
     };
@@ -336,9 +336,7 @@
     plugins = {
       # Adds icons for plugins to utilize in ui
       web-devicons = {
-
         enable = true;
-        autoLoad = true;
         settings = {
           color_icons = true;
           strict = true;
@@ -363,7 +361,7 @@
     # extraPlugins = with pkgs.vimPlugins; [
     extraPackages = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
-      nvim-web-devicons # TODO: Figure out how to configure using this with telescope
+      nvim-web-devicons
       kanagawa-nvim
       tokyonight-nvim
       plenary-nvim
