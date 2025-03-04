@@ -7,6 +7,14 @@
     extraPackages = with pkgs; [
       # Used to format Lua code
       stylua
+      luaformatter
+      dprint
+      ruff
+      fixjson
+      rustfmt
+      yamlfmt
+      alejandra
+      d2
     ];
 
     # Autoformat
@@ -29,6 +37,20 @@
         '';
         formatters_by_ft = {
           lua = [ "stylua" ];
+          d2 = [ "d2" ];
+          python = [ "ruff" ];
+          json = [ "fixjson" ];
+          javascript = [
+            "dprint"
+          ];
+          typescript = [ "dprint" ];
+          yaml = [ "yamlfmt" ];
+          go = [
+            "goimports"
+            "gofmt"
+          ];
+          nix = [ "alejandra" ];
+          " " = [ "trim_whitespace" ];
           # Conform can also run multiple formatters sequentially
           # python = [ "isort "black" ];
           #

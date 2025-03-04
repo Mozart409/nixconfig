@@ -116,6 +116,15 @@
     enable = true;
     defaultEditor = true;
 
+    # extraPlugins = with pkgs.vimPlugins; [
+    extraPackages = with pkgs.vimPlugins; [
+      # Useful for getting pretty icons, but requires a Nerd Font.
+      nvim-web-devicons
+      kanagawa-nvim
+      tokyonight-nvim
+      plenary-nvim
+    ];
+
     # You can easily change to a different colorscheme.
     # Add your colorscheme here and enable it.
     # Don't forget to disable the colorschemes you arent using
@@ -357,15 +366,6 @@
         };
       };
     };
-
-    # extraPlugins = with pkgs.vimPlugins; [
-    extraPackages = with pkgs.vimPlugins; [
-      # Useful for getting pretty icons, but requires a Nerd Font.
-      nvim-web-devicons
-      kanagawa-nvim
-      tokyonight-nvim
-      plenary-nvim
-    ];
 
     # TODO: Figure out where to move this
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapre

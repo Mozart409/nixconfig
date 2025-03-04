@@ -17,7 +17,7 @@
     # https://nix-community.github.io/nixvim/keymaps/index.html
     keymaps = [
       {
-        key = "\\";
+        key = "<leader>fe";
         action = "<cmd>Neotree reveal<cr>";
         options = {
           desc = "NeoTree reveal";
