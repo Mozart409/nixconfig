@@ -3,4 +3,11 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
+
+  programs.tailscale-systray = {
+    enable = true;
+  };
+
+  services.tailscale.enable = true;
+
 }
