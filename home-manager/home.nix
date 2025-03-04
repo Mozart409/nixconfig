@@ -173,6 +173,9 @@
     };
   };
 
+  environment.shells = with pkgs; [ zsh ];
+
+  users.defaultUserShell = pkgs.zsh;
   programs.gh = {
     enable = true;
     gitCredentialHelper.enable = true;
