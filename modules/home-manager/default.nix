@@ -4,7 +4,6 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   tmux = import ./tmux.nix;
-  # gnome = import ./gnome.nix;
+  gnome = import ./gnome.nix;
   nixvim = import ./kickstart.nixvim/nixvim.nix;
-  #  tailscale = import ./tailscale.nix;
 }
