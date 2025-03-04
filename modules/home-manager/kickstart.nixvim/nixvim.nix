@@ -335,8 +335,15 @@
 
     plugins = {
       # Adds icons for plugins to utilize in ui
-      web-devicons.enable = true;
+      web-devicons = {
 
+        enable = true;
+        autoLoad = true;
+        settings = {
+          color_icons = true;
+          strict = true;
+        };
+      };
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {
