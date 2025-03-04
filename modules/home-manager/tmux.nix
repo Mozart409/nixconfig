@@ -12,6 +12,7 @@
     extraConfig = ''
       set-option -sa terminal-overrides ",xterm*:Tc"
       set -g mouse off
+      set -g default-command ${pkgs.zsh}/bin/zsh
       set-option -g allow-passthrough on
 
       unbind C-b
