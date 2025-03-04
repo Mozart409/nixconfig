@@ -360,7 +360,6 @@
       };
     };
 
-
     # extraPlugins = with pkgs.vimPlugins; [
     extraPackages = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
