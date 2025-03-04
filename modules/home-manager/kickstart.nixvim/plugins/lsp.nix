@@ -101,9 +101,6 @@
         dprint = {
           enable = true;
         };
-        elixir-ls = {
-          enable = true;
-        };
         html = {
           enable = true;
         };

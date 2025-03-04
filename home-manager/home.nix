@@ -59,6 +59,7 @@
     heroic
 
     lazygit
+    rustup
 
     vim
     neovim
