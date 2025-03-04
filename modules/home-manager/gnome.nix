@@ -6,16 +6,14 @@
 }:
 {
 
-  environment.systemPackages = with pkgs; [
-    pkgs.gnome-tweaks
-    pkgs.dconf
-    pkgs.kanagawa-gtk-theme
-    pkgs.kanagawa-icon-theme
-  ];
-
-  programs.dconf = {
-    enable = true;
-    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  programs = {
+    gnome-tweaks.enable = true;
+    kanagawa-gtk-theme.enable = true;
+    kanagawa-icon-theme.enable = true;
+    dconf = {
+      enable = true;
+      settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    };
   };
 
 }
