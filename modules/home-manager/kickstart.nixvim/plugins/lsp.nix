@@ -1,6 +1,13 @@
 { pkgs, ... }:
 {
   programs.nixvim = {
+    extraPackages = with pkgs; [
+      # Used to format Lua code
+      elixir-ls
+      gopls
+      rust-analyzer
+    ];
+
     # Dependencies
     # { 'Bilal2453/luvit-meta', lazy = true },
     #
