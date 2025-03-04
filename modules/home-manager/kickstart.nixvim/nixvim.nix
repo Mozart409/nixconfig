@@ -141,8 +141,10 @@
         };
       };
       kanagawa = {
-        enable = true;
-        autoLoad = false;
+        enable = false;
+      };
+      catppuccin = {
+        enable = false;
       };
     };
 

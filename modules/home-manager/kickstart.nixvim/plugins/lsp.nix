@@ -70,27 +70,60 @@
       #  - settings: Override the default settings passed when initializing the server.
       #        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       servers = {
-        # clangd = {
-        #  enable = true;
-        #}
-        # gopls = {
-        #  enable = true;
-        #}
-        # pyright = {
-        #  enable = true;
-        #}
-        # rust_analyzer = {
-        #  enable = true;
-        #}
+        clangd = {
+          enable = true;
+        };
+        gopls = {
+          enable = true;
+        };
+        pyright = {
+          enable = true;
+        };
+        bashls = {
+          enable = true;
+        };
+        dagger = {
+          enable = true;
+        };
+        docker_compose_language_service = {
+          enable = true;
+        };
+        dockerls = {
+          enable = true;
+        };
+        dprint = {
+          enable = true;
+        };
+        elixir-ls = {
+          enable = true;
+        };
+        html = {
+          enable = true;
+        };
+        htmx = {
+          enable = true;
+        };
+        nil_ls = {
+          enable = true;
+        };
+        postgres_lsp = {
+          enable = true;
+        };
+        protols = {
+          enable = true;
+        };
+        rust_analyzer = {
+          enable = true;
+        };
         # ...etc. See `https://nix-community.github.io/nixvim/plugins/lsp` for a list of pre-configured LSPs
         #
         # Some languages (like typscript) have entire language plugins that can be useful:
         #    `https://nix-community.github.io/nixvim/plugins/typescript-tools/index.html?highlight=typescript-tools#pluginstypescript-toolspackage`
         #
         # But for many setups the LSP (`tsserver`) will work just fine
-        # tsserver = {
-        #  enable = true;
-        #}
+        tsserver = {
+          enable = true;
+        };
 
         lua_ls = {
           enable = true;
