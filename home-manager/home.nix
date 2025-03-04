@@ -15,6 +15,7 @@
     outputs.homeManagerModules.tmux
     #     outputs.homeManagerModules.gnome
     outputs.homeManagerModules.nixvim
+    outputs.homeManagerModules.tailscale
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
 
