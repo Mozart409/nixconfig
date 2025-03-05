@@ -5,7 +5,7 @@
     plugins.mini = {
       enable = true;
 
-	mockDevIcons = true;
+      mockDevIcons = true;
       modules = {
         # Better Around/Inside textobjects
         #
@@ -26,9 +26,9 @@
         surround = {
         };
 
-	icons = {};
+        icons = { };
 
-	animate = {};
+        animate = { };
 
         # Simple and easy statusline.
         #  You could remove this setup call if you don't like it,
