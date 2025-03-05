@@ -158,6 +158,8 @@
     gnome-tweaks
     gamemode
 
+    lefthook
+    rustscan
   ];
 
   # Enable home-manager and git
