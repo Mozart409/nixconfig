@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -21,7 +22,7 @@
       vimPlugins.plenary-nvim
     ];
     enable = true;
-
+    defaultEditor = true;
     /*
          extraConfigLua = ''
         require("telescope").load_extension("lazygit-nvim")
