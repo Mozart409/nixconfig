@@ -68,8 +68,11 @@
     ungoogled-chromium
     librewolf
     firefox
-    #     nixfmt-rfc-style
 
+    # password managers
+    bitwarden-cli
+    bitwarden-desktop
+    proton-pass
     neofetch
     nnn # terminal file manager
 
