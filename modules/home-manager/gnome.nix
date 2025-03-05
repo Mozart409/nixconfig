@@ -35,7 +35,9 @@
         font-hinting = "slight";
 
       };
-
+      "org/gnome/desktop/session/idle-delay"= 600;
+      "org/gnome/mutter/edge-tiling" = true;
+      "org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic" = true;
       "org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
     };
   };
