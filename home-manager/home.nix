@@ -156,6 +156,7 @@
     openrgb-with-all-plugins
 
     gnome-tweaks
+    gamemode
 
   ];
 
