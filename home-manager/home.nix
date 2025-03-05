@@ -168,6 +168,20 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
+    autocd = true;
+    zprof.enable = false;
+    historySubstringSearch.enable = true;
+    syntaxHighlighting = {
+      enable = true;
+    };
+    autosuggestion = {
+      enable = true;
+    };
+    oh-my-zsh = {
+      enable = true;
+      # theme = "wezm";
+      theme = "tonotdo";
+    };
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
