@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   programs.nixvim = {
     extraPackages = with pkgs; [
       luaformatter
@@ -22,9 +23,9 @@
     enable = true;
 
     /*
-       extraConfigLua = ''
-      require("telescope").load_extension("lazygit-nvim")
-    '';
+         extraConfigLua = ''
+        require("telescope").load_extension("lazygit-nvim")
+      '';
     */
 
     colorschemes.catppuccin.enable = false;
@@ -92,9 +93,9 @@
       cmp = {
         autoEnableSources = true;
         settings.sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "buffer";}
+          { name = "nvim_lsp"; }
+          { name = "path"; }
+          { name = "buffer"; }
         ];
       };
 
@@ -142,18 +143,24 @@
             end
           '';
           formatters_by_ft = {
-            lua = ["luaformatter" "stylua"];
-            d2 = ["d2"];
-            python = ["ruff"];
-            json = ["fixjson"];
+            lua = [
+              "luaformatter"
+              "stylua"
+            ];
+            d2 = [ "d2" ];
+            python = [ "ruff" ];
+            json = [ "fixjson" ];
             javascript = [
               "dprint"
             ];
-            typescript = ["dprint"];
-            yaml = ["yamlfmt"];
-            go = ["goimports" "gofmt"];
-            nix = ["alejandra"];
-            " " = ["trim_whitespace"];
+            typescript = [ "dprint" ];
+            yaml = [ "yamlfmt" ];
+            go = [
+              "goimports"
+              "gofmt"
+            ];
+            nix = [ "alejandra" ];
+            " " = [ "trim_whitespace" ];
           };
 
           keymaps = [
@@ -230,34 +237,34 @@
           };
 
           /*
-             "<leader>/" = {
-            options.desc = "[/] Fuzzily search in current buffer";
+               "<leader>/" = {
+              options.desc = "[/] Fuzzily search in current buffer";
 
-            action = ''
-              function()
-                require('telescope.builtin').current_buffer_fuzzy_find(
-                  require('telescope.themes').get_dropdown {
-                    winblend = 10,
-                    previewer = false
-                  }
-                )
-              end
-            '';
-          };
+              action = ''
+                function()
+                  require('telescope.builtin').current_buffer_fuzzy_find(
+                    require('telescope.themes').get_dropdown {
+                      winblend = 10,
+                      previewer = false
+                    }
+                  )
+                end
+              '';
+            };
           */
           /*
-          "<leader>s/" = {
-            options.desc = "[S]earch [/] Fuzzily in open files";
+            "<leader>s/" = {
+              options.desc = "[S]earch [/] Fuzzily in open files";
 
-            action = ''
-              function()
-              require('telescope.builtin').live_grep {
-              grep_open_files = true,
-              prompt_title = 'Live Grep in Open Files'
-                }
-              end
-            '';
-          };
+              action = ''
+                function()
+                require('telescope.builtin').live_grep {
+                grep_open_files = true,
+                prompt_title = 'Live Grep in Open Files'
+                  }
+                end
+              '';
+            };
           */
         };
         extensions = {
