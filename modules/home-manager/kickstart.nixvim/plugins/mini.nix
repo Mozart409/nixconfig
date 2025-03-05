@@ -5,6 +5,7 @@
     plugins.mini = {
       enable = true;
 
+	mockDevIcons = true;
       modules = {
         # Better Around/Inside textobjects
         #
@@ -25,6 +26,10 @@
         surround = {
         };
 
+	icons = {};
+
+	animate = {};
+
         # Simple and easy statusline.
         #  You could remove this setup call if you don't like it,
         #  and try some other statusline plugin
@@ -34,6 +39,7 @@
 
         # ... and there is more!
         # Check out: https://github.com/echasnovski/mini.nvim
+
       };
     };
 
