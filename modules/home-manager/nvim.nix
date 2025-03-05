@@ -6,6 +6,11 @@
   ...
 }:
 {
+
+  imports = [
+    inputs.nixvim.homeManagerModules.nixvim
+
+  ];
   programs.nixvim = {
     extraPackages = with pkgs; [
       luaformatter
