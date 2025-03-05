@@ -155,6 +155,8 @@
 
     openrgb-with-all-plugins
 
+    gnome-tweaks
+
   ];
 
   # Enable home-manager and git
