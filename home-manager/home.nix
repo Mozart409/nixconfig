@@ -14,7 +14,8 @@
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.tmux
     outputs.homeManagerModules.gnome
-    outputs.homeManagerModules.nixvim
+    # outputs.homeManagerModules.nixvim
+    outputs.homeManagerModules.nvim
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
 
