@@ -63,7 +63,7 @@
     # extraPlugins = with pkgs.vimPlugins; [
     extraPlugins = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
-      nvim-web-devicons
+      #  nvim-web-devicons
       kanagawa-nvim
       tokyonight-nvim
       plenary-nvim
@@ -294,16 +294,20 @@
 
     plugins = {
       # Adds icons for plugins to utilize in ui
-      web-devicons = {
-        enable = true;
-        settings = {
-          color_icons = true;
-          strict = true;
-        };
-      };
+      # web-devicons = {
+      #   enable = true;
+      #   settings = {
+      #     color_icons = true;
+      #     strict = true;
+      #   };
+      # };
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {
+        enable = true;
+      };
+
+      mini = {
         enable = true;
       };
 
@@ -319,11 +323,11 @@
 
     # TODO: Figure out where to move this
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapre
-    extraConfigLuaPre = ''
-      if vim.g.have_nerd_font then
-        require('nvim-web-devicons').setup {}
-      end
-    '';
+    # extraConfigLuaPre = ''
+    #   if vim.g.have_nerd_font then
+    #     require('nvim-web-devicons').setup {}
+    #   end
+    # '';
 
     # The line beneath this is called `modeline`. See `:help modeline`
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapost
