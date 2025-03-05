@@ -61,6 +61,8 @@
 
     lazygit
     rustup
+    cargo-watch
+    cargo-workspaces
 
     vim
     neovim
