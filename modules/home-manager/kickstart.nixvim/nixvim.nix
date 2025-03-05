@@ -63,7 +63,6 @@
     # extraPlugins = with pkgs.vimPlugins; [
     extraPlugins = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
-      #  nvim-web-devicons
       kanagawa-nvim
       tokyonight-nvim
       plenary-nvim
@@ -294,13 +293,8 @@
 
     plugins = {
       # Adds icons for plugins to utilize in ui
-      # web-devicons = {
-      #   enable = true;
-      #   settings = {
-      #     color_icons = true;
-      #     strict = true;
-      #   };
-      # };
+      autoclose.enable = true;
+      better-escape.enable = true;
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {

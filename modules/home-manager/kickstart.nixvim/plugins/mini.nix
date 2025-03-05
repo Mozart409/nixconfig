@@ -14,6 +14,7 @@
         #  - yinq - [Y]ank [I]nside [N]ext [Q]uote
         #  - ci'  - [C]hange [I]nside [']quote
         ai = {
+          enable = true;
           n_lines = 500;
         };
 
@@ -24,16 +25,22 @@
         #  - sd'   - [S]urround [D]elete [']quotes
         #  - sr)'  - [S]urround [R]eplace [)] [']
         surround = {
+          enable = true;
         };
 
-        icons = { };
+        icons = {
+          enable = true;
+        };
 
-        animate = { };
+        animate = {
+          enable = true;
+        };
 
         # Simple and easy statusline.
         #  You could remove this setup call if you don't like it,
         #  and try some other statusline plugin
         statusline = {
+          enable = true;
           use_icons.__raw = "vim.g.have_nerd_font";
         };
 
