@@ -13,10 +13,11 @@
         #  - va)  - [V]isually select [A]round [)]paren
         #  - yinq - [Y]ank [I]nside [N]ext [Q]uote
         #  - ci'  - [C]hange [I]nside [']quote
-        ai = {
-          enable = true;
-          n_lines = 500;
-        };
+
+        # ai = {
+        #   enable = true;
+        #   n_lines = 500;
+        # };
 
         # Add/delete/replace surroundings (brackets, quotes, etc.)
         #
@@ -24,17 +25,14 @@
         #  - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
         #  - sd'   - [S]urround [D]elete [']quotes
         #  - sr)'  - [S]urround [R]eplace [)] [']
-        surround = {
-          enable = true;
-        };
 
-        icons = {
-          enable = true;
-        };
-
-        animate = {
-          enable = true;
-        };
+        # surround = {
+        #   enable = true;
+        # };
+        #
+        # icons = {
+        #   enable = true;
+        # };
 
         # Simple and easy statusline.
         #  You could remove this setup call if you don't like it,
