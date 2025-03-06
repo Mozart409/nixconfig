@@ -95,7 +95,7 @@
       gruvbox = {
         enable = false;
       };
-      oxocarbon= {
+      oxocarbon = {
         enable = true;
       };
     };
