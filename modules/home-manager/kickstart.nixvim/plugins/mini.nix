@@ -30,9 +30,9 @@
         #   enable = true;
         # };
         #
-        # icons = {
-        #   enable = true;
-        # };
+        icons = {
+          enable = true;
+        };
 
         # Simple and easy statusline.
         #  You could remove this setup call if you don't like it,

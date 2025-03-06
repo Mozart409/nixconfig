@@ -66,7 +66,9 @@
       kanagawa-nvim
       tokyonight-nvim
       plenary-nvim
+      nvim-web-devicons
       gruvbox
+      oxocarbon-nvim
     ];
 
     # You can easily change to a different colorscheme.
@@ -92,6 +94,9 @@
       };
       gruvbox = {
         enable = false;
+      };
+      oxocarbon= {
+        enable = true;
       };
     };
 
@@ -295,6 +300,7 @@
       # Adds icons for plugins to utilize in ui
       autoclose.enable = true;
       better-escape.enable = true;
+      web-devicons.enable = true;
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {
@@ -313,11 +319,11 @@
 
     # TODO: Figure out where to move this
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapre
-    # extraConfigLuaPre = ''
-    #   if vim.g.have_nerd_font then
-    #     require('nvim-web-devicons').setup {}
-    #   end
-    # '';
+    extraConfigLuaPre = ''
+      if vim.g.have_nerd_font then
+        require('nvim-web-devicons').setup {}
+      end
+    '';
 
     # The line beneath this is called `modeline`. See `:help modeline`
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapost
