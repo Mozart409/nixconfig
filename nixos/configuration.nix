@@ -214,7 +214,11 @@
 
   environment.variables.EDITOR = "neovim";
 
-  fonts.packages = with pkgs; [ nerdfonts ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.hack
+    nerd-fonts._0xproto
+    nerd-fonts.droid-sans-mono
+  ];
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.
