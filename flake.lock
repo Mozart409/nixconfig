@@ -8,10 +8,9 @@
       "locked": {
         "lastModified": 1741243019,
         "narHash": "sha256-lFSPV4W5/oqztMPLlabt3f4jQy12Kw/TSUbDQKY/+bw=",
-        "owner": "nix-community",
-        "repo": "fenix",
+        "path": "/nix/store/4gv5v8vyvasp69nx8ajb0qf3cfy630sk-source",
         "rev": "576638b227e5f465993588309d5dce9f112a9c28",
-        "type": "github"
+        "type": "path"
       },
       "original": {
         "id": "fenix",
