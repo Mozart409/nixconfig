@@ -69,7 +69,6 @@
     nh
     treefmt2
     ungoogled-chromium
-    librewolf
     firefox
 
     # password managers
