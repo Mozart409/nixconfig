@@ -24,6 +24,8 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
+    khanelivim.url = "github:khaneliman/khanelivim";
+
   };
 
   outputs =
@@ -32,7 +34,6 @@
       nixpkgs,
       home-manager,
       nixvim,
-      fenix,
       ...
     }@inputs:
     let

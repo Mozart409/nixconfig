@@ -151,6 +151,14 @@
     nodejs_22
     pnpm_10
 
+    perl
+
+    python314
+
+    ruby_3_4
+
+    lua
+    luajitPackages.luarocks
     go_1_22
     goa
 
