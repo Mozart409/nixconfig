@@ -1,5 +1,5 @@
 {
-  description = "Your new nix config";
+  description = "Mozart409 multi-system config";
 
   inputs = {
     # Nixpkgs
@@ -23,9 +23,6 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
-
-    khanelivim.url = "github:khaneliman/khanelivim";
-
   };
 
   outputs =

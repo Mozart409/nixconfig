@@ -14,6 +14,7 @@
       rustfmt
       yamlfmt
       alejandra
+      nixfmt-rfc-style
       d2
     ];
 
@@ -49,10 +50,9 @@
             "goimports"
             "gofmt"
           ];
-          nix = [ "alejandra" ];
-          " " = [ "trim_whitespace" ];
+          nix = [ "nixfmt-rfc-style" ];
+          # " " = [ "trim_whitespace" ];
           # Conform can also run multiple formatters sequentially
-          # python = [ "isort "black" ];
           #
           # You can use a sublist to tell conform to run *until* a formatter
           # is found

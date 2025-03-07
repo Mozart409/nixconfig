@@ -4,6 +4,7 @@
     extraPackages = with pkgs; [
       # Used to format Lua code
       elixir-ls
+      gotools
       gopls
       rust-analyzer
     ];
@@ -29,6 +30,7 @@
       # NOTE: This is where you would add a vim plugin that is not implemented in Nixvim, also see extraConfigLuaPre below
       #
       # TODO: Add luvit-meta when Nixos package is added
+      luvit-meta
     ];
 
     # https://nix-community.github.io/nixvim/NeovimOptions/autoGroups/index.html
@@ -138,11 +140,11 @@
             completion = {
               callSnippet = "Replace";
             };
-            #diagnostics = {
-            #  disable = [
-            #    "missing-fields"
-            #  ];
-            #};
+            diagnostics = {
+              disable = [
+                "missing-fields"
+              ];
+            };
           };
         };
       };
