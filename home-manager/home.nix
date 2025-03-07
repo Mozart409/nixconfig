@@ -161,6 +161,11 @@
 
     lefthook
     rustscan
+
+    nerd-fonts.mplus
+    nerd-fonts.noto
+    nerd-fonts.hack
+    nerd-fonts.open-dyslexic
   ];
 
   # Enable home-manager and git

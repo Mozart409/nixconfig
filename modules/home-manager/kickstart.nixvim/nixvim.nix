@@ -68,6 +68,7 @@
       plenary-nvim
       nvim-web-devicons
       gruvbox
+      vim-devicons
       oxocarbon-nvim
     ];
 
