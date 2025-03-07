@@ -56,7 +56,7 @@
   fonts = {
     enableDefaultPackages = true;
     fontDir.enable = true;
-    fontconfig.useEmbeddedBitmaps = true;
+    # fontconfig.useEmbeddedBitmaps = true;
 
     packages = with pkgs; [
       ubuntu_font_family
