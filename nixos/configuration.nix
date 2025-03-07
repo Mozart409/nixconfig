@@ -80,6 +80,28 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  fonts = {
+    enableDefaultPackages = true;
+    fontDir.enable = true;
+    fontconfig.useEmbeddedBitmaps = true;
+
+    packages = with pkgs; [
+      ubuntu_font_family
+      nerd-fonts.hack
+      nerd-fonts._0xproto
+      nerd-fonts.droid-sans-mono
+      nerd-fonts.mplus
+      nerd-fonts.noto
+      nerd-fonts.hack
+      nerd-fonts.open-dyslexic
+      nerd-fonts.fira-code
+      nerd-fonts.zed-mono
+      nerd-fonts.zed-mono
+      nerd-fonts.victor-mono
+      fira-code
+    ];
+  };
+
   # Enable networking
   networking.networkmanager.enable = true;
 

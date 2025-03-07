@@ -5,6 +5,9 @@ excludes = ["*.md", "*.gif", ".git/"]
 command = "nixfmt"
 includes = ["*.nix"]
 
+[formatter.yamlfmt]
+command = "yamlfmt"
+includes = ["*.yaml", "*.yml"]
 
 [formatter.shfmt]
 command = "shfmt"
