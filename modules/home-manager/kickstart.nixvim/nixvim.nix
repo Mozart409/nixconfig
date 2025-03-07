@@ -35,7 +35,7 @@
     # Add your plugins to ./plugins/custom/plugins and import them below
     ./plugins/custom/plugins/oil.nix
     ./plugins/custom/plugins/snacks.nix
-    ./plugins/custom/plugins/lazygit.nix
+    # ./plugins/custom/plugins/lazygit.nix
     ./plugins/custom/plugins/autocommands.nix
     ./plugins/custom/plugins/tailwind-tools.nix
     ./plugins/custom/plugins/trouble.nix
