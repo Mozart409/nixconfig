@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eox pipefail
+set -eou pipefail
 
 clear
 
@@ -14,4 +14,3 @@ echo "Switching OS..."
 nh home switch . || exit 1
 
 nh os switch . || exit 1
-
