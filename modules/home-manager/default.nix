@@ -6,5 +6,4 @@
   tmux = import ./tmux.nix;
   gnome = import ./gnome.nix;
   nixvim = import ./kickstart.nixvim/nixvim.nix;
-  nvim = import ./nvim.nix;
 }

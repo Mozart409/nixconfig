@@ -14,7 +14,6 @@
       rustfmt
       yamlfmt
       alejandra
-      nixfmt-rfc-style
       d2
     ];
 
@@ -50,7 +49,7 @@
             "goimports"
             "gofmt"
           ];
-          nix = [ "nixfmt-rfc-style" ];
+          nix = [ "alejandra" ];
           # " " = [ "trim_whitespace" ];
           # Conform can also run multiple formatters sequentially
           #
