@@ -53,10 +53,31 @@
     homeDirectory = "/home/amadeus";
   };
 
+  fonts = {
+    enableDefaultPackages = true;
+    fontDir.enable = true;
+    fontconfig.useEmbeddedBitmaps = true;
+
+    packages = with pkgs; [
+      ubuntu_font_family
+      nerd-fonts.hack
+      nerd-fonts._0xproto
+      nerd-fonts.droid-sans-mono
+      nerd-fonts.mplus
+      nerd-fonts.noto
+      nerd-fonts.hack
+      nerd-fonts.open-dyslexic
+      nerd-fonts.fira-code
+      nerd-fonts.zed-mono
+      nerd-fonts.zed-mono
+      nerd-fonts.victor-mono
+      fira-code
+    ];
+  };
+
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   home.packages = with pkgs; [
-    steam
     heroic
 
     lazygit
@@ -162,10 +183,6 @@
     lefthook
     rustscan
 
-    nerd-fonts.mplus
-    nerd-fonts.noto
-    nerd-fonts.hack
-    nerd-fonts.open-dyslexic
   ];
 
   # Enable home-manager and git

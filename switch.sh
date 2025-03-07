@@ -1,11 +1,13 @@
 #!/bin/sh
 
+set -eox pipefail
+
 clear
 
 echo ""
 if [[ $1 == "fmt" ]]; then
     echo "Formatting nix files..."
-    treefmt || exit
+    treefmt || exit 1
 fi
 echo "Switching OS..."
 
