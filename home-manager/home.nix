@@ -54,8 +54,8 @@
   };
 
   fonts = {
-    enableDefaultPackages = true;
-    fontDir.enable = true;
+    # enableDefaultPackages = true;
+    # fontDir.enable = true;
     # fontconfig.useEmbeddedBitmaps = true;
 
     packages = with pkgs; [
