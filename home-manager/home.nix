@@ -64,7 +64,6 @@
     cargo-workspaces
 
     vim
-    neovim
     nh
     treefmt2
     yamlfmt
