@@ -1,8 +1,14 @@
 {
   lazygit = {
     enable = true;
-    keys = {
-      "lg" = "<cmd>LazyGit<cr>";
-    };
+    keymaps = [
+      {
+        key = "<leader>lg";
+        action = "<cmd>LazyGit<cr>";
+        options = {
+          desc = "LazyGit reveal";
+        };
+      }
+    ];
   };
 }
