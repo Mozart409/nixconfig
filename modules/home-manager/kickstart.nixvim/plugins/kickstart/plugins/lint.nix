@@ -4,8 +4,7 @@
 
     extraPlugins = with pkgs; [
       hadolint
-      markdownlint
-      jsonlint
+      mdl
       vale
     ];
 
@@ -18,14 +17,14 @@
       lintersByFt = {
         nix = [ "nix" ];
         markdown = [
-          "markdownlint"
+          "mdl"
           #vale
         ];
         #clojure = ["clj-kondo"];
         dockerfile = [ "hadolint" ];
         #inko = ["inko"];
         #janet = ["janet"];
-        json = [ "jsonlint" ];
+        # json = [ "jsonlint" ];
         #rst = ["vale"];
         #ruby = ["ruby"];
         #terraform = ["tflint"];
