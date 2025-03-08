@@ -89,6 +89,7 @@
     yq-go # yaml processor https://github.com/mikefarah/yq
     eza # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
+    fd # A better find alternative
 
     # networking tools
     mtr # A network diagnostic tool
@@ -168,7 +169,6 @@
 
     lefthook
     rustscan
-
   ];
 
   # Enable home-manager and git
@@ -239,7 +239,6 @@
         cache = "--timeout 21600";
       };
     };
-
   };
 
   # set cursor size and dpi for 4k monitor
