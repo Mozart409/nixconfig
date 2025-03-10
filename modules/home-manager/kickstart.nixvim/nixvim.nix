@@ -1,5 +1,8 @@
-{ pkgs, inputs, ... }:
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     # NOTE: The first thing you will want to do is uncommented on of the three imports below
     # depending on which module you chose to use to install Nixvim.
@@ -42,25 +45,25 @@
   ];
 
   /*
-    =====================================================================
-    ==================== READ THIS BEFORE CONTINUING ====================
-    =====================================================================
-    ========                                    .-----.          ========
-    ========         .----------------------.   | === |          ========
-    ========         |.-""""""""""""""""""-.|   |-----|          ========
-    ========         ||                    ||   | === |          ========
-    ========         ||  KICKSTART.NIXVIM  ||   |-----|          ========
-    ========         ||                    ||   | === |          ========
-    ========         ||                    ||   |-----|          ========
-    ========         ||:Tutor              ||   |:::::|          ========
-    ========         |'-..................-'|   |____o|          ========
-    ========         `"")----------------(""`   ___________      ========
-    ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
-    ========       /:::========|  |==hjkl==:::\  \ required \    ========
-    ========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
-    ========                                                     ========
-    =====================================================================
-    =====================================================================
+  =====================================================================
+  ==================== READ THIS BEFORE CONTINUING ====================
+  =====================================================================
+  ========                                    .-----.          ========
+  ========         .----------------------.   | === |          ========
+  ========         |.-""""""""""""""""""-.|   |-----|          ========
+  ========         ||                    ||   | === |          ========
+  ========         ||  KICKSTART.NIXVIM  ||   |-----|          ========
+  ========         ||                    ||   | === |          ========
+  ========         ||                    ||   |-----|          ========
+  ========         ||:Tutor              ||   |:::::|          ========
+  ========         |'-..................-'|   |____o|          ========
+  ========         `"")----------------(""`   ___________      ========
+  ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
+  ========       /:::========|  |==hjkl==:::\  \ required \    ========
+  ========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
+  ========                                                     ========
+  =====================================================================
+  =====================================================================
   */
   programs.nixvim = {
     enable = true;
@@ -203,6 +206,16 @@
         key = "<Esc>";
         action = "<cmd>nohlsearch<CR>";
       }
+
+      {
+        mode = "n";
+        key = "<leader>tt";
+        action = "<cmd>LazyGit<cr>";
+        options = {
+          desc = "LazyGit reveal";
+        };
+      }
+
       # Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
       # for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
       # is not what someone will guess without a bit more experience.
@@ -219,26 +232,26 @@
       }
       # TIP: Disable arrow keys in normal mode
       /*
-        {
-          mode = "n";
-          key = "<left>";
-          action = "<cmd>echo 'Use h to move!!'<CR>";
-        }
-        {
-          mode = "n";
-          key = "<right>";
-          action = "<cmd>echo 'Use l to move!!'<CR>";
-        }
-        {
-          mode = "n";
-          key = "<up>";
-          action = "<cmd>echo 'Use k to move!!'<CR>";
-        }
-        {
-          mode = "n";
-          key = "<down>";
-          action = "<cmd>echo 'Use j to move!!'<CR>";
-        }
+      {
+        mode = "n";
+        key = "<left>";
+        action = "<cmd>echo 'Use h to move!!'<CR>";
+      }
+      {
+        mode = "n";
+        key = "<right>";
+        action = "<cmd>echo 'Use l to move!!'<CR>";
+      }
+      {
+        mode = "n";
+        key = "<up>";
+        action = "<cmd>echo 'Use k to move!!'<CR>";
+      }
+      {
+        mode = "n";
+        key = "<down>";
+        action = "<cmd>echo 'Use j to move!!'<CR>";
+      }
       */
       # Keybinds to make split navigation easier.
       #  Use CTRL+<hjkl> to switch between windows
@@ -293,7 +306,7 @@
       #  Try it with `yap` in normal mode
       #  See `:help vim.highlight.on_yank()`
       {
-        event = [ "TextYankPost" ];
+        event = ["TextYankPost"];
         desc = "Highlight when yanking (copying) text";
         group = "kickstart-highlight-yank";
         callback.__raw = ''
