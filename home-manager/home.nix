@@ -67,6 +67,8 @@
     cargo-watch
     cargo-workspaces
 
+    d2
+
     vim
     nh
     treefmt2
