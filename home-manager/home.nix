@@ -57,7 +57,7 @@
   # programs.neovim.enable = true;
   home.packages = with pkgs; [
     heroic
-
+    steam-devices-udev-rules
     lazygit
     rustup
     cargo-watch
