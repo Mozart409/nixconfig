@@ -58,6 +58,10 @@
   home.packages = with pkgs; [
     heroic
     steam-devices-udev-rules
+    logitech-udev-rules
+    game-devices-udev-rules
+    udev-block-notify
+
     lazygit
     rustup
     cargo-watch
