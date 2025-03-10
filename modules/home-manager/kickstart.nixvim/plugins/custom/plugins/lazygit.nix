@@ -3,7 +3,7 @@
     enable = true;
     keymaps = [
       {
-        key = "<leader>lg";
+        key = "<leader>GG";
         action = "<cmd>LazyGit<cr>";
         options = {
           desc = "LazyGit reveal";
