@@ -175,6 +175,8 @@
 
     lefthook
     rustscan
+
+    fahclient
   ];
 
   # Enable home-manager and git
