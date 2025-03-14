@@ -1,6 +1,4 @@
 excludes = ["*.md", "*.gif", ".git/"]
-
-
 [formatter.nixfmt-rfc-style]
 command = "nixfmt"
 includes = ["*.nix"]
@@ -12,3 +10,8 @@ includes = ["*.yaml", "*.yml"]
 [formatter.shfmt]
 command = "shfmt"
 includes = ["*.sh"]
+
+[formatter.taplo]
+command = "taplo"
+options = ["format"]
+includes = ["*.toml"]

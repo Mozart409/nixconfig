@@ -76,6 +76,7 @@
     nh
     treefmt
     yamlfmt
+    taplo
     ungoogled-chromium
     firefox
 
