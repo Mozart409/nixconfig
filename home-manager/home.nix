@@ -160,6 +160,8 @@
     pnpm_10
     ni
 
+    dprint
+
     perl
 
     python314
