@@ -66,6 +66,7 @@
     rustup
     cargo-watch
     cargo-workspaces
+    dioxus-cli
 
     d2
 
@@ -73,7 +74,7 @@
 
     vim
     nh
-    treefmt2
+    treefmt
     yamlfmt
     ungoogled-chromium
     firefox
