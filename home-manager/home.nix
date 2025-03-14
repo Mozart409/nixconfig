@@ -69,6 +69,8 @@
 
     d2
 
+    devenv
+
     vim
     nh
     treefmt2
@@ -156,6 +158,7 @@
 
     nodejs_22
     pnpm_10
+    ni
 
     perl
 
