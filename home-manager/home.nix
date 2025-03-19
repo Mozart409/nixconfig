@@ -178,6 +178,7 @@
     openrgb-with-all-plugins
 
     gnome-tweaks
+    dconf-editor
     gamemode
 
     lefthook
