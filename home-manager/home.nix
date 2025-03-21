@@ -214,7 +214,7 @@
       lg = "lazygit";
       ld = "lazydocker";
       k = "kubectl";
-      flk = "cd ~/myflakes";
+      flk = "cd ~/nixconfig/";
       dps = "docker compose ps";
       dup = "docker compose up -d --build --remove-orphans";
       dwn = "docker compose down";
