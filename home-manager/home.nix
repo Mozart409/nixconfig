@@ -80,6 +80,7 @@
     ungoogled-chromium
     firefox
     tor
+    tor-browser
 
     # password managers
     bitwarden-cli
