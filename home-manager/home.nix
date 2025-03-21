@@ -72,6 +72,8 @@
 
     devenv
 
+    libreoffice-qt6-fresh
+
     vim
     nh
     treefmt
