@@ -82,6 +82,8 @@
     tor
     tor-browser
 
+    signal-desktop
+
     # password managers
     bitwarden-cli
     bitwarden-desktop
