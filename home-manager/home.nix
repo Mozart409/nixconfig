@@ -79,6 +79,7 @@
     taplo
     ungoogled-chromium
     firefox
+    tor
 
     # password managers
     bitwarden-cli
