@@ -194,6 +194,12 @@
   # Enable home-manager and git
   programs.home-manager.enable = true;
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+  ];
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
