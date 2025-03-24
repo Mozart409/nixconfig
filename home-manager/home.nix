@@ -84,6 +84,11 @@
     tor
     tor-browser
 
+    hcloud
+    jq
+    gnused
+    jq
+
     signal-desktop
 
     # password managers
