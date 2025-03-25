@@ -90,6 +90,7 @@
     jq
 
     sqlite-web
+    sqlitestudio
 
     signal-desktop
 
