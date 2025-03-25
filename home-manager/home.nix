@@ -89,6 +89,8 @@
     gnused
     jq
 
+    sqlite-web
+
     signal-desktop
 
     # password managers
