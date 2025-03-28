@@ -252,7 +252,7 @@
 
     docker = {
       enable = true;
-      enableNvidia = true;
+      enableNvidia = false;
     };
   };
 
