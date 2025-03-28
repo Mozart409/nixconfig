@@ -189,6 +189,9 @@
     luajitPackages.tiktoken_core
     lynx
 
+    obs-studio
+    vlc
+
     go_1_22
     goa
 
