@@ -186,6 +186,9 @@
 
     lua
     luajitPackages.luarocks
+    luajitPackages.tiktoken_core
+    lynx
+
     go_1_22
     goa
 
