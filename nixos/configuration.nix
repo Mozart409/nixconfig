@@ -253,6 +253,12 @@
     docker = {
       enable = true;
       enableNvidia = false;
+      daemon.settings = {
+        features = {
+          # Enable containerd image store
+          "containerd-snapshotter" = true;
+        };
+      };
     };
   };
 
@@ -263,6 +269,7 @@
     podman-tui # status of containers in the terminal
     podman-compose # start group of containers for dev
     docker-compose
+    docker-buildx
     lazydocker
   ];
   # Enable automatic login for the user.
