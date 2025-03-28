@@ -74,8 +74,6 @@
 
     libreoffice-qt6-fresh
 
-    pods
-
     vim
     nh
     treefmt
