@@ -3,7 +3,6 @@
     plugins = {
       snacks = {
         enable = true;
-
         settings = {
           animate = {
             enabled = true;
@@ -16,7 +15,7 @@
           bufdelete = { };
 
           dashboard = {
-            enabled = true;
+            enabled = false;
 
             formats.__raw = ''
               {
