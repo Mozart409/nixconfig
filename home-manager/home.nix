@@ -84,6 +84,8 @@
     tor
     tor-browser
 
+    anytype
+
     hcloud
     jq
     gnused
