@@ -75,6 +75,7 @@
 
     libreoffice-qt6-fresh
 
+    tpi
     vim
     nh
     treefmt
