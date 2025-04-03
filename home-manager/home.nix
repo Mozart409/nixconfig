@@ -87,6 +87,7 @@
     tor-browser
 
     anytype
+    teamspeak6-client
 
     hcloud
     jq
