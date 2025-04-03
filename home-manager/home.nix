@@ -93,6 +93,7 @@
     jq
     gnused
     jq
+    busybox
 
     sqlite-web
     sqlitestudio
