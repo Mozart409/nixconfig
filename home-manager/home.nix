@@ -98,6 +98,8 @@
     sqlite-web
     sqlitestudio
 
+    pwgen
+
     signal-desktop
 
     # password managers
