@@ -98,6 +98,9 @@
     sqlite-web
     sqlitestudio
 
+    vagrant
+    multipass
+
     pwgen
 
     signal-desktop
