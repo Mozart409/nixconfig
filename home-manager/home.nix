@@ -81,8 +81,10 @@
     treefmt
     yamlfmt
     taplo
+
     ungoogled-chromium
     firefox
+    floorp
     tor
     tor-browser
 
