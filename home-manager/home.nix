@@ -87,6 +87,9 @@
     floorp
     tor
     tor-browser
+    torsocks
+
+    transmission_4
 
     anytype
     teamspeak6-client
