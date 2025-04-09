@@ -89,6 +89,8 @@
     tor-browser
     torsocks
 
+    gammastep
+
     anytype
     teamspeak6-client
 
