@@ -80,6 +80,7 @@
     nh
     treefmt
     yamlfmt
+    hujsonfmt
     taplo
 
     ungoogled-chromium
