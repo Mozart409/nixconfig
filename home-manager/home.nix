@@ -80,6 +80,7 @@
     nh
     treefmt
     yamlfmt
+    mdl
     hujsonfmt
     taplo
 
