@@ -295,10 +295,6 @@
     extraConfig = {
       init.defaultBranch = "main";
       pull.rebase = "true";
-      credential = {
-        helper = "oauth";
-        cache = "--timeout 21600";
-      };
     };
   };
 
