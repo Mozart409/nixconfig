@@ -12,6 +12,8 @@
           "c"
           "diff"
           "html"
+          "json"
+          "rust"
           "lua"
           "luadoc"
           "markdown"
