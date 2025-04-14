@@ -91,7 +91,7 @@
     tor-browser
     torsocks
 
-    ktorrent
+    kdePackages.ktorrent
     gammastep
 
     anytype
