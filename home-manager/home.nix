@@ -91,6 +91,8 @@
     tor-browser
     torsocks
 
+    qemu_full
+
     kdePackages.ktorrent
     gammastep
 
