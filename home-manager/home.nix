@@ -91,6 +91,8 @@
     tor-browser
     torsocks
 
+    nyaa
+
     gammastep
 
     anytype
