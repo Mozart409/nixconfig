@@ -91,6 +91,8 @@
     tor-browser
     torsocks
 
+    syncthing
+
     qemu_full
 
     kdePackages.ktorrent
