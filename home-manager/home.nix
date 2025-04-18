@@ -115,7 +115,7 @@
 
     pwgen
 
-    signal-desktop
+    signal-desktop-bin
 
     # password managers
     bitwarden-cli
