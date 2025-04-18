@@ -215,7 +215,7 @@
     obs-studio
     vlc
 
-    go_1_22
+    go
     goa
 
     openrgb-with-all-plugins
