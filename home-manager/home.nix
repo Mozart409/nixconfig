@@ -64,7 +64,7 @@
 
     lazygit
     rustup
-    cargo
+    # cargo
     cargo-watch
     cargo-workspaces
     dioxus-cli
