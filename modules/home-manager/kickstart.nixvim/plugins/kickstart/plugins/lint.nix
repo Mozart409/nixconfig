@@ -1,7 +1,5 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.nixvim = {
-
     extraPlugins = with pkgs; [
       hadolint
       mdl
@@ -15,20 +13,20 @@
 
       # NOTE: Enabling these will cause errors unless these tools are installed
       lintersByFt = {
-        nix = [ "nix" ];
+        nix = ["nix"];
         markdown = [
           "mdl"
           #vale
         ];
         #clojure = ["clj-kondo"];
-        dockerfile = [ "hadolint" ];
+        dockerfile = ["hadolint"];
         #inko = ["inko"];
         #janet = ["janet"];
         # json = [ "jsonlint" ];
         #rst = ["vale"];
         #ruby = ["ruby"];
         #terraform = ["tflint"];
-        text = [ "vale" ];
+        text = ["vale"];
       };
 
       # Create autocommand which carries out the actual linting

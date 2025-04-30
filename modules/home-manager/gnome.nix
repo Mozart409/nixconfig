@@ -3,9 +3,7 @@
   lib,
   pkgs,
   ...
-}:
-{
-
+}: {
   # gnome-tweaks.enable = true;
   # kanagawa-gtk-theme.enable = true;
   # kanagawa-icon-theme.enable = true;
@@ -33,7 +31,6 @@
         color-scheme = "prefer-dark";
         font-antialiasing = "grayscale";
         font-hinting = "slight";
-
       };
       "org/gnome/desktop/session".idle-delay = 600;
       "org/gnome/mutter".edge-tiling = true;
@@ -41,5 +38,4 @@
       "org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
     };
   };
-
 }

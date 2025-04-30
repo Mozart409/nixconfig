@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.nixvim = {
     # Dependencies
     #
@@ -36,20 +35,20 @@
           end
         '';
         formatters_by_ft = {
-          lua = [ "stylua" ];
-          d2 = [ "d2" ];
-          python = [ "ruff" ];
-          json = [ "fixjson" ];
+          lua = ["stylua"];
+          d2 = ["d2"];
+          python = ["ruff"];
+          json = ["fixjson"];
           javascript = [
             "dprint"
           ];
-          typescript = [ "dprint" ];
-          yaml = [ "yamlfmt" ];
+          typescript = ["dprint"];
+          yaml = ["yamlfmt"];
           go = [
             "goimports"
             "gofmt"
           ];
-          nix = [ "alejandra" ];
+          nix = ["alejandra"];
           # " " = [ "trim_whitespace" ];
           # Conform can also run multiple formatters sequentially
           #

@@ -12,7 +12,7 @@
             enabled = true;
           };
 
-          bufdelete = { };
+          bufdelete = {};
 
           dashboard = {
             enabled = true;
