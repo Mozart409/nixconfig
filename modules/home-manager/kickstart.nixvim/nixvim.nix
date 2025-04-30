@@ -42,6 +42,8 @@
     ./plugins/custom/plugins/tailwind-tools.nix
     ./plugins/custom/plugins/trouble.nix
     ./plugins/custom/plugins/copilot.nix
+    ./plugins/custom/plugins/dashboard.nix
+    ./plugins/custom/plugins/copilot-chat.nix
   ];
 
   /*
