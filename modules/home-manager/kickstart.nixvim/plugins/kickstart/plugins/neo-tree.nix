@@ -4,10 +4,13 @@
     # https://nix-community.github.io/nixvim/plugins/neo-tree/index.html?highlight=neo-tree#pluginsneo-treepackage
     plugins.neo-tree = {
       enable = true;
-      auto_open = false;
+      # auto_open = false;
       addBlankLineAtTop = true;
       autoCleanAfterSessionRestore = true;
       closeIfLastWindow = true;
+      extraOptions = {
+        auto_open = false;
+      };
       filesystem = {
         window = {
           mappings = {
