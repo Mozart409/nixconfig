@@ -1,7 +1,10 @@
 excludes = ["*.md", "*.gif", ".git/"]
-[formatter.nixfmt-rfc-style]
-command = "nixfmt"
+
+[formatter.alejandra]
+command = "alejandra"
+excludes = []
 includes = ["*.nix"]
+options = []
 
 [formatter.yamlfmt]
 command = "yamlfmt"
