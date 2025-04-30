@@ -70,6 +70,7 @@
     enable = true;
     defaultEditor = true;
 
+    performance.byteCompileLua.enable = true;
     # extraPlugins = with pkgs.vimPlugins; [
     extraPlugins = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
