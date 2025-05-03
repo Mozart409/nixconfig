@@ -23,12 +23,18 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    plasma-manager,
     nixvim,
     ...
   } @ inputs: let
@@ -82,6 +88,7 @@
         modules = [
           # > Our main home-manager configuration file <
           ./home-manager/home.nix
+          inputs.plasma-manager.homeManagerModules.plasma-manager
         ];
       };
     };
