@@ -91,7 +91,6 @@
       nerd-fonts.hack
       nerd-fonts._0xproto
       nerd-fonts.droid-sans-mono
-      nerd-fonts.mplus
       nerd-fonts.noto
       nerd-fonts.hack
       nerd-fonts.open-dyslexic
