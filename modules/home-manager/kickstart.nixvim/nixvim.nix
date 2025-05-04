@@ -45,6 +45,7 @@
     ./plugins/custom/plugins/dashboard.nix
     ./plugins/custom/plugins/copilot-chat.nix
     ./plugins/custom/plugins/trouble.nix
+    ./plugins/custom/plugins/comment.nix
   ];
 
   /*
