@@ -85,6 +85,8 @@
     hujsonfmt
     taplo
     zola
+    opentofu
+    opentofu-ls
 
     ungoogled-chromium
     firefox
