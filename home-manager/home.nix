@@ -84,6 +84,7 @@
     mdl
     hujsonfmt
     taplo
+    zola
 
     ungoogled-chromium
     firefox
