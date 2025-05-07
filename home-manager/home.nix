@@ -87,6 +87,7 @@
     zola
     opentofu
     opentofu-ls
+    bruno
 
     ungoogled-chromium
     firefox
