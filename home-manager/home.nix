@@ -97,6 +97,8 @@
     torsocks
 
     syncthing
+    talosctl
+    nmap
 
     qemu_full
 
