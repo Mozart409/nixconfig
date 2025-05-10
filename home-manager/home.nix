@@ -95,6 +95,7 @@
     tor
     tor-browser
     torsocks
+    gimp3-with-plugins
 
     syncthing
     talosctl
