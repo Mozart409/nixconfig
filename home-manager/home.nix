@@ -89,6 +89,11 @@
     opentofu-ls
     bruno
 
+    kubectl
+    kubie
+    kubernetes-helm
+    kubernetes-helmPlugins.helm-diff
+
     ungoogled-chromium
     firefox
     floorp
